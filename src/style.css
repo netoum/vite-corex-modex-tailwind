@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans+Mono:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+@import "tailwindcss";
+@import "@netoum/modex-tailwind";
+
+/* For different themes and modes use one of the following instead */
+/* @import "@netoum/modex-tailwind/neo.css"; */
+
+/* @import "@netoum/modex-tailwind/revo.css"; */
+
+/* @import "@netoum/modex-tailwind/uno.css"; */
+
+/* Or for individual imports */
+/* @import "@netoum/modex-tailwind/tokens/global/color.css";
+@import "@netoum/modex-tailwind/tokens/global/border.css";
+@import "@netoum/modex-tailwind/tokens/global/font.css";
+@import "@netoum/modex-tailwind/tokens/global/dimension.css";
+@import "@netoum/modex-tailwind/tokens/neo/semantic/border.css";
+@import "@netoum/modex-tailwind/tokens/neo/semantic/color.css";
+@import "@netoum/modex-tailwind/tokens/neo/semantic/dimension.css";
+@import "@netoum/modex-tailwind/tokens/neo/semantic/font.css";
+
+@import "@netoum/modex-tailwind/tokens/neo/mode/light.css";
+@import "@netoum/modex-tailwind/tokens/neo/mode/dark.css";
+
+@import "@netoum/modex-tailwind/components/accordion.css";
+@import "@netoum/modex-tailwind/components/avatar.css";
+@import "@netoum/modex-tailwind/components/badge.css";
+@import "@netoum/modex-tailwind/components/button.css";
+@import "@netoum/modex-tailwind/components/checkbox.css";
+@import "@netoum/modex-tailwind/components/clipboard.css";
+@import "@netoum/modex-tailwind/components/collapsible.css";
+@import "@netoum/modex-tailwind/components/dialog.css";
+@import "@netoum/modex-tailwind/components/link.css";
+@import "@netoum/modex-tailwind/components/listbox.css";
+@import "@netoum/modex-tailwind/components/menu.css";
+@import "@netoum/modex-tailwind/components/switch.css";
+@import "@netoum/modex-tailwind/components/switcher.css";
+@import "@netoum/modex-tailwind/components/tabs.css";
+@import "@netoum/modex-tailwind/components/toggle-group.css";
+@import "@netoum/modex-tailwind/components/tree-view.css"; */
+
+
+
+
+
+body {
+    font-family: var(--font-family);
+
+    @apply min-h-screen flex flex-col 
+           bg-layer 
+           text-contrast-2
+           font-(family-name:--font-family)
+           font-(--font-size)
+           tracking-(--font-letter-spacing-4)
+           leading-(--font-line-height);
+    
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-wrap: pretty;
+}
+
+header {
+    @apply flex flex-wrap items-center justify-center 
+           gap-(--gap-ui) 
+           p-(--padding-ui);
+}
+
+.logo {
+    @apply h-8 
+           text-(--color-accent-brand) 
+           hover:text-(--color-accent-brand-1)
+           transition-colors duration-200;
+}
+
+main {
+    @apply flex justify-start items-center 
+           max-w-3xl w-full mx-auto 
+           p-(--padding-ui);
+}
+
+.preview {
+    @apply flex flex-wrap gap-(--gap-ui);
+}
+
+
